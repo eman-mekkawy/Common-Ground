@@ -1,17 +1,63 @@
-# commonground
+CommonGround – AI-Powered Decision Support Platform
+CommonGround is a Flutter-based AI system that helps citizens access public support services in an intelligent and transparent way.
+It uses Google Gemini 1.5 Flash + Firebase + Clean Architecture to:
+- Analyze user situations
+- Detect hidden needs
+- Match services intelligently
+- Detect crisis cases and prioritize safety
 
-A new Flutter project.
+Features
+AI Needs Analysis
+- Extracts explicit and hidden needs
+- Provides reasoning + confidence score
 
-## Getting Started
+Crisis Detection
+- Detects emergencies (homelessness, violence, suicide risk)
+- Immediately redirects to crisis support screen
 
-This project is a starting point for a Flutter application.
+Smart Matching Engine
+- Rule-based + AI hybrid system
+- Shows eligibility confidence and explanation
 
-A few resources to get you started if this is your first Flutter project:
+Organization Dashboard
+- Manage services and eligibility rules
+- Control capacity levels
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Admin Dashboard
+- Shows demand vs supply gaps
+- Visual analytics charts
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Multilingual Support
+- English + Arabic
+- Full RTL support
+
+Tech Stack
+- Flutter (Dart)
+- Material 3
+- Riverpod
+- Firebase Auth
+- Cloud Firestore
+- Google Gemini 1.5 Flash
+- fl_chart
+
+ Architecture
+Feature-Based Clean Architecture:
+- core/
+- features/auth
+- features/citizen
+- features/organization
+- features/admin
+
+Each feature has:
+- data layer
+- domain layer
+- UI layer
+
+Safety
+- Human-in-the-loop design
+- Crisis override system
+- Transparent AI reasoning
+- Non-deterministic AI results are explained
+
+Built By
+CommonGround Team
